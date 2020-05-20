@@ -1,13 +1,15 @@
-from Instrumentos import Instrumentos:
+from Instrumentos import Instrumentos
+import random
 
 class Banda():
-	instrumento=Instrumentos():
-	InstrumentosList=[Violin(),Guitarra(),Trompeta()]
-	def crearBanda(self,cantidad):
+
+	def crearBanda(cantidad):
+		InstrumentosList=['Violin','Guitarra','Trompeta']
+		NombreList=['Maria','Susana','Paula', 'Carlos', 'Alberto', 'Juan', 'Fernanda']
 		for x in range(cantidad):
-			import random
 			cantidad2=random.randint(0,2)
-			Instrumento=InstrumentosList[cantidad2]
-			
-			
-			
+			cantidad3=random.randint(0,6)
+			if (cantidad2%2==1):
+				print(Instrumentos.tocarInstrumento(NombreList[cantidad3], InstrumentosList[cantidad2]))
+			else:
+				print(Instrumentos.prepararInstrumento(NombreList[cantidad3], InstrumentosList[cantidad2]))

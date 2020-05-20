@@ -1,13 +1,12 @@
-from Banda import Banda:
+from Banda import Banda as bn
+import random
 
 class Serenata():
 
 	def __init__(self):
-		banda=Banda()
-		import random
 		cantidad=random.randint(0,10)
-		print("cantidad",cantidad)
-	
+		bn.crearBanda(cantidad)
+		return print("cantidad miembros: ",cantidad)
 
 
 

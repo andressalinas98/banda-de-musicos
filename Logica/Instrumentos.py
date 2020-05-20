@@ -1,9 +1,9 @@
+
 class Instrumentos():
 
+	def tocarInstrumento(nombre, instrumento):
+		return print("{} está tocando {}".format(nombre, instrumento))
 
-	def tocarInstrumento(self):
-		print("Tocando")
-
-	def prepararInstrumento(self):
-		print("Preparando")
+	def prepararInstrumento(nombre, instrumento):
+		return print("{} está preparando {}".format(nombre, instrumento))
 
