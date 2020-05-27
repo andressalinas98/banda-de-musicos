@@ -18,7 +18,7 @@ Este proyecto se dividira en dos fases, la primera sera la parte del diseño la 
 ## Diagrama de clases 
 ----------------------------------------------------------------------------------------------------------------
 
-![Diagrama de clases](https://github.com/valentinatobo/Banda/blob/master/img/uml.JPG)
+![Diagrama de clases](https://github.com/andressalinas98/banda-de-musicos/blob/master/Logica/static/diagrama.jpg)
 
 ## ¿Qué principios usaremos en el proyecto?
 ----------------------------------------------------------------------------------------------------------------
