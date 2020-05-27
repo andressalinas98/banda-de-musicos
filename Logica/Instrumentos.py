@@ -8,22 +8,31 @@ class Instrumentos(ABC):
 	
 class Violin(Instrumentos):
 	def prepararInstrumento(self,nombre):
-		print(nombre+" Preparando Violin")
+		imagen="static/violin.jpg"
+		violinp="Preparando Violin"
+		return nombre,violinp,imagen
 	def tocarInstrumento(self,nombre):
-		print(nombre+" Tocando Violin")
+		violint=" Tocando Violin"
+		return nombre,violint
 		
 class Guitarra(Instrumentos):
 	def prepararInstrumento(self,nombre):
-		print(nombre+" Preparando Guitarra")
+		imagen="static/guitarra.jpg"
+		guitarrap=" Preparando Guitarra"
+		return nombre,guitarrap,imagen
 	def tocarInstrumento(self,nombre):
-		print(nombre+" Tocando Guitarra")
+		guitarrat=" Tocando Guitarra"
+		return nombre,guitarrat
 		
 
 class Trompeta(Instrumentos):
 	def prepararInstrumento(self,nombre):
-		print(nombre+" Preparando Trompeta")
+		imagen="static/trompeta.jpg"
+		trompetap=" Preparando Trompeta"
+		return nombre,trompetap,imagen
 	def tocarInstrumento(self,nombre):
-		print(nombre+" Tocando Trompeta")
+		trompetat=" Tocando Trompeta"
+		return nombre,trompetat
 		
 
 

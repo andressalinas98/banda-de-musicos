@@ -2,7 +2,7 @@
 <html lang = "en">
    <head>
      <title>Data</title>
-     <link rel="stylesheet" type="text/css" href="{{ url_for('css', filename='font.css') }}">
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}" >
    </head>
    <body>
 
@@ -14,14 +14,16 @@
               <tr>
                  <th>Musico</th>
                  <th>Instrumento</th>
+                 <th>Imagen</th>
               </tr>
            </thead>
 
            <tbody>
               {% for data in rows %}
                  <tr>
-                    <td><img src="static/{{data[0]}}" alt="{{data[0]}}"/></td>
+                    <td>{{ data[0] }}</td>
                     <td>{{ data[1] }}</td>
+                    <td><img src="{{data[2]}}" alt="{{data[2]}}" width="50px" /></td>
                  </tr>
               {% endfor %}
            </tbody>
