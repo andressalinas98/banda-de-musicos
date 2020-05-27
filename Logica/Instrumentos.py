@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-class Instrumentos():
+class Instrumentos(ABC):
 	def prepararInstrumento(self,nombre):
 		pass
 	def tocarInstrumento(self,nombre):
