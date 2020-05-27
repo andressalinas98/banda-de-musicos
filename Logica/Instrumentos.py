@@ -1,9 +1,31 @@
-
+from abc import ABC, abstractmethod
 class Instrumentos():
+	def prepararInstrumento(self,nombre):
+		pass
+	def tocarInstrumento(self,nombre):
+		pass
 
-	def tocarInstrumento(nombre, instrumento):
-		return print("{} está tocando {}".format(nombre, instrumento))
+	
+class Violin(Instrumentos):
+	def prepararInstrumento(self,nombre):
+		print(nombre+" Preparando Violin")
+	def tocarInstrumento(self,nombre):
+		print(nombre+" Tocando Violin")
+		
+class Guitarra(Instrumentos):
+	def prepararInstrumento(self,nombre):
+		print(nombre+" Preparando Guitarra")
+	def tocarInstrumento(self,nombre):
+		print(nombre+" Tocando Guitarra")
+		
 
-	def prepararInstrumento(nombre, instrumento):
-		return print("{} está preparando {}".format(nombre, instrumento))
+class Trompeta(Instrumentos):
+	def prepararInstrumento(self,nombre):
+		print(nombre+" Preparando Trompeta")
+	def tocarInstrumento(self,nombre):
+		print(nombre+" Tocando Trompeta")
+		
+
+
+
 
